@@ -1,0 +1,12 @@
+body {
+				background-image: url(border.jpg), url(battle.jpg), url(black.jpg), url(grey.jpg);
+				background-repeat: no-repeat;
+				background-position: 1040px 118px, bottom, center, top;
+				background-size:  400px 400px, 1440px 670px, 1440px 580px, 1440px 200px;
+				}
+div.fixed {
+				position: fixed;
+				bottom: 0;
+				right: 0px;
+				width: 230px;
+				}
