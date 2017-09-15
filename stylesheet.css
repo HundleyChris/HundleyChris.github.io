@@ -1,8 +1,7 @@
 body {
-	background-image: url(battle.jpg), url(black.jpg), url(grey.jpg);
+	background-image: url(battle.jpg);
 	background-repeat: no-repeat;
-	background-position: bottom, center, top;
-	background-size: cover, 1440px 580px, 1440px 200px;
+	background-size: cover;
 	font-family: Arial;
 	color: white;
 }
