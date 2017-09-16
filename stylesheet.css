@@ -72,13 +72,11 @@ ul li:hover ul li {
 }
 #slider figure {
 	position: relative;
-	width: 400%;
+	width: 500%;
+	height:500%;
 	margin: 0;
 	left: 0;
 	text-align: left;
 	font-size: 0;
 	animation: 20s slider infinite;
-}
-#slider {
-	background-size: cover;
 }
