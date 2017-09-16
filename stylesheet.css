@@ -79,3 +79,6 @@ ul li:hover ul li {
 	font-size: 0;
 	animation: 20s slider infinite;
 }
+#slider {
+	background-size: cover;
+}
