@@ -67,13 +67,13 @@ ul li:hover ul li {
 	overflow: hidden;
 }
 #slider figure img {
-	width: 200%;
+	width: 20%;
 	float: left;
 }
 #slider figure {
 	position: relative;
-	width: 500%;
-	height:500%;
+	width: 1600%;
+	height:1600%;
 	margin: 0;
 	left: 0;
 	text-align: left;
