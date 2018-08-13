@@ -10,7 +10,7 @@ ul {
 	list-style: none;
 }
 ul li {
-	float: left;
+	float: up;
 	width: 200px;
 	height: 40px;
 	background-color: #ff702d;
