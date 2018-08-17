@@ -1,7 +1,7 @@
 body {
-    background: url('grey.jpeg') no-repeat;
+    background-color: #fffcf7;\
     background-size: cover;
-	font-family: Arial;
+	font-family: Tahoma;
 	color: white;
 }
 ul {
@@ -10,10 +10,9 @@ ul {
 	list-style: none;
 }
 ul li {
-	float: left;
 	width: 150px;
 	height: 40px;
-	background-color: #ff702d;
+	background-color: #fffcf7;
 	opacity: .92;
 	line-height: 40px;
 	text-align: center;
@@ -21,12 +20,12 @@ ul li {
 }
 ul li a {
 	text-decoration: none;
-	color: white;
+	color: #141414;
 	display: block;
 }
 ul li a:hover {
     opacity: .5;
-	background-color: black;
+	background-color: white;
 	
 }
 ul li ul li {
