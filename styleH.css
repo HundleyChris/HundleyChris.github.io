@@ -2,7 +2,7 @@ body{
   font: 15px/1.5 Arial, Helvetica,sans-serif;
   padding:0;
   margin:0;
-  background-color:#f4f4f4;
+  background-color:black;
 }
 
 /* Global */
@@ -87,7 +87,44 @@ header a:hover{
   text-align:center;
   color:#ffffff;
 }
-
+p2{
+  width:400px;
+  padding:15px;
+  float:left;
+  color:#ffffff;
+  background:#000000;
+  font-size:20px;
+}
+p3{
+  position:relative;
+  top:-50px;
+  right:-60px;
+  width:400px;
+  float:left;
+  color:#ffffff;
+  font-size:20px;
+}
+p4{
+  position:relative;
+  top:-145px;
+  right:-140px;
+  width:400px;
+  float:left;
+  color:#ffffff;
+  font-size:20px;
+}
+h3{
+  position:relative;
+  top:-20px;
+  left:200px;
+  font-size:30px;
+}
+h4{
+  position:relative;
+  top:-110px;
+  left:280px;
+  font-size:30px;
+}
 #showcase h1{
   margin-top:100px;
   font-size:55px;
@@ -107,6 +144,7 @@ header a:hover{
 
 #newsletter h1{
   float:left;
+  font-size:30px;
 }
 
 #newsletter form {
