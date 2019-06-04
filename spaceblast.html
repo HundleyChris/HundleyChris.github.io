@@ -6,6 +6,18 @@
 </head>
 <body>
     <script type="text/processing">
+    /*
+    SPACEBLAST
+    Author Chris Hundley
+    Online https://hundleychris.github.io/Classwork.html
+    
+    This game works by:
+    -Having a moving repeating background to make it seem as if you where moving
+    -It also has i ship that is effectedby gravity
+    -when you click the ship moves up
+    -planets will come toward you and you must avoid them so that you dont crash
+    - you have a highscore and current score
+    */
 PImage background; PImage spaceship; PImage planet1; float Py; int Px; int PVx; PImage planet2;
 int z; int y; int Vy; int gameState; int x; int s; int h; float Py1; int Px1;
 void setup(){
