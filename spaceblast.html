@@ -1,0 +1,110 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Processing Demo</title>
+<script type="text/javascript" src="./something.js"></script>
+</head>
+<body>
+PImage background; PImage spaceship; PImage planet1; float Py; int Px; int PVx; PImage planet2;
+int z; int y; int Vy; int gameState; int x; int s; int h; float Py1; int Px1;
+void setup(){
+  gameState = 0;
+  size(1000,780);
+  planet1 = loadImage("./img/planet1.png");
+  planet2 = loadImage("./img/planet2.png");
+  background = loadImage("./img/city2.jpg");
+  spaceship = loadImage("./img/spaceship2.png");
+  x = 50;
+  Vy = -5;
+  y = 390;
+  Px = 1100;
+  Px1 = 1100;
+  Py1 = random(100,650);
+  PVx = -3;
+  s = 0; 
+  h = 0; 
+  Py = random(100, 650);
+}
+void draw(){
+  if(gameState == 0){
+      image(background, z,0);
+      image(background, z+background.width, 0);
+      z--;
+      if(z < -(background.width)){
+        z=0;
+      }
+    image(spaceship, x, y,width/5, height/9);
+    text("High: ", 10, 70);
+    text(h, 100, 70);
+    text(s, 110, 30);
+    text("Score: ", 10, 30);
+    textSize(32);
+    fill(255,255,255);
+    planet();
+    accelerate();
+    checkship();
+  }
+  else{
+  fill(0);
+  textSize(40);
+  if(mouseX<330 && mouseX>100 && mouseY < 245 && mouseY>200){
+  fill(0,0,255);
+  }
+  rect(100,200,230,45,5);
+  fill(255);
+  if(mouseX <330 && mouseX>100 &&mouseY<245 && mouseY>200){
+  fill(0,0,255);
+  }
+  text("You Lose!!!",110,239);
+  if(mousePressed){
+    if(mouseX <330 && mouseX>100 &&mouseY<245 && mouseY>200){
+      gameState=0;
+      y = 390;
+      Px = 1100;
+      s = 0;
+    }
+  }
+ }
+}
+
+void accelerate(){
+  if(mousePressed){
+    y += Vy;
+  }
+  y += 2;
+}
+void checkship(){
+  if(y > height || y < -5){
+    gameState = 1;
+  }
+}
+void planet(){
+  Px += PVx;
+  image(planet1, Px, Py, width/4, height/4);
+  if(Px == -250){
+    Px = 1100;
+    Py = random(100, 650);
+    s += 1;
+    if(h < s){
+      h += 1;
+    }
+  }
+  if(abs((int)((x+517)-(Px+426))) < 90 && abs((int)((y+210) - (Py+291))) < 110){
+    gameState = 1;
+  }
+}
+void home(){
+  if(gameState == -1){
+    fill(255,255,255,160);
+    textSize(16);
+    text("Click the shipto play",20,40);
+    if(mousePressed & mouseX>250){
+      gameState = 0;
+    }
+  }
+}
+</script>
+
+<canvas id="sketch" style="border: 1px solid black;"></canvas>
+</body>
+</html>
